@@ -1,0 +1,49 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+.env
+
+# Vercel
+.vercel
+
+# IDEs
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.env*
+!.env.example
+
+# Local preview mockups (not part of the deployed app)
+preview.html
+preview-links.html
+
+# Working copy review sheet (kept local)
+mindfulmarkus-website-texts.xlsx
+
+mindfulmarkus-website-texts.numbers
+tsconfig.tsbuildinfo
