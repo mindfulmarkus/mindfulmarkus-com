@@ -1,0 +1,100 @@
+/* ==========================================================================
+   mindfulmarkus — component classes (plain CSS)
+   For projects NOT using Tailwind (e.g. a Vite app). Requires tokens.css.
+   Mirrors the website's @layer components so the look is identical.
+   ========================================================================== */
+
+/* Layout ------------------------------------------------------------------ */
+.mm-container {
+  width: 100%;
+  max-width: var(--mm-container-max);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+@media (min-width: 640px) { .mm-container { padding-inline: 2rem; } }
+@media (min-width: 1024px) { .mm-container { padding-inline: 2.5rem; } }
+
+/* Eyebrow (small uppercase label above headings) -------------------------- */
+.mm-eyebrow {
+  display: inline-block;
+  font-family: var(--mm-font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--mm-tracking-eyebrow);
+  color: var(--mm-clay);
+}
+
+/* Headings ---------------------------------------------------------------- */
+.mm-heading {
+  font-family: var(--mm-font-serif);
+  font-weight: 500;
+  color: var(--mm-forest);
+  line-height: 1.12;
+}
+
+/* Buttons ----------------------------------------------------------------- */
+.mm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--mm-radius-pill);
+  font-family: var(--mm-font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s var(--mm-ease);
+}
+.mm-btn:active { transform: scale(0.97); }
+
+.mm-btn--primary { background: var(--mm-forest); color: var(--mm-cream); box-shadow: var(--mm-shadow-soft); }
+.mm-btn--primary:hover { background: var(--mm-forest-deep); }
+
+.mm-btn--clay { background: var(--mm-clay); color: var(--mm-cream); box-shadow: var(--mm-shadow-soft); }
+.mm-btn--clay:hover { background: var(--mm-clay-dark); }
+
+.mm-btn--sage { background: var(--mm-sage); color: var(--mm-forest-deep); }
+.mm-btn--sage:hover { background: var(--mm-sage-light); }
+
+.mm-btn--outline { background: transparent; color: var(--mm-forest); border: 1px solid rgba(30, 77, 62, 0.3); }
+.mm-btn--outline:hover { background: var(--mm-forest); color: var(--mm-cream); }
+
+/* Cards ------------------------------------------------------------------- */
+.mm-card {
+  background: var(--mm-cream);
+  border-radius: var(--mm-radius-card);
+  box-shadow: var(--mm-shadow-card);
+  overflow: hidden;
+}
+
+/* Animated underline link -------------------------------------------------- */
+.mm-link {
+  position: relative;
+  font-weight: 500;
+  color: var(--mm-clay);
+  text-decoration: none;
+}
+.mm-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: var(--mm-clay);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--mm-ease);
+}
+.mm-link:hover::after { transform: scaleX(1); }
+
+/* Entrance animation ------------------------------------------------------ */
+@keyframes mm-fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.mm-fade-up { animation: mm-fade-up 0.9s ease-out both; }

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   mindfulmarkus — design tokens
+   Single source of truth, derived from the live mindfulmarkus.com site.
+   Framework-agnostic: drop into ANY project (Next, Vite, plain HTML) and use
+   the CSS variables directly, e.g.  color: var(--mm-forest);
+   ========================================================================== */
+
+:root {
+  /* ---- Brand greens ---- */
+  --mm-forest: #1e4d3e;        /* primary brand green */
+  --mm-forest-deep: #14342a;   /* darker green — deep sections, hovers */
+
+  /* ---- Sage (muted green) ---- */
+  --mm-sage: #909e86;
+  --mm-sage-light: #b7c0a9;
+  --mm-sage-dark: #6f7d63;
+
+  /* ---- Clay (warm accent / CTAs) ---- */
+  --mm-clay: #b36a5e;
+  --mm-clay-light: #cb897e;
+  --mm-clay-dark: #8f4f45;
+
+  /* ---- Ochre (secondary accent, selection) ---- */
+  --mm-ochre: #c2843e;
+  --mm-ochre-light: #d8a35f;
+  --mm-ochre-dark: #9a6526;
+
+  /* ---- Neutrals / surfaces ---- */
+  --mm-sand: #e7d9c2;
+  --mm-sand-light: #f1e8d8;
+  --mm-cream: #f7f1e6;         /* default page background */
+  --mm-parchment: #f2e9d8;
+  --mm-bark: #3a2e26;          /* image overlays */
+  --mm-ink: #2b241e;           /* default text */
+
+  /* ---- Typography ---- */
+  /* Map these to the loaded fonts in each project (see fonts.css). */
+  --mm-font-serif: var(--font-serif, 'Cormorant', Georgia, serif);
+  --mm-font-sans: var(--font-sans, 'Montserrat', system-ui, sans-serif);
+
+  --mm-tracking-eyebrow: 0.25em;
+
+  /* ---- Radii ---- */
+  --mm-radius-pill: 9999px;    /* buttons, badges, inputs */
+  --mm-radius-card: 1.75rem;   /* feature cards (xl2) */
+  --mm-radius-tile: 0.75rem;   /* gallery tiles, small cards (xl) */
+
+  /* ---- Shadows ---- */
+  --mm-shadow-soft: 0 18px 50px -20px rgba(43, 36, 30, 0.35);
+  --mm-shadow-card: 0 12px 40px -22px rgba(43, 36, 30, 0.45);
+
+  /* ---- Layout ---- */
+  --mm-container-max: 72rem;   /* 1152px content width */
+
+  /* ---- Motion ---- */
+  --mm-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::selection {
+  background: var(--mm-ochre);
+  color: #fff;
+}

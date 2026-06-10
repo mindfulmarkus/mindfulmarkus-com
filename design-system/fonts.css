@@ -1,0 +1,26 @@
+/* ==========================================================================
+   mindfulmarkus — fonts
+   Cormorant (serif, display) + Montserrat (sans, UI/body).
+   --------------------------------------------------------------------------
+   Two ways to load:
+
+   1) Plain CSS / Vite / static HTML — import this file (uses Google Fonts CDN),
+      OR paste the @import line into your global stylesheet.
+
+   2) Next.js — prefer next/font instead of this CDN import, mapping to the same
+      CSS variables so tokens.css resolves identically:
+
+        import { Cormorant, Montserrat } from 'next/font/google'
+        const cormorant = Cormorant({ subsets:['latin'], weight:['400','500','600','700'],
+          style:['normal','italic'], variable:'--font-serif', display:'swap' })
+        const montserrat = Montserrat({ subsets:['latin'], weight:['300','400','500','600'],
+          variable:'--font-sans', display:'swap' })
+        // <html className={`${cormorant.variable} ${montserrat.variable}`}>
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --font-serif: 'Cormorant', Georgia, serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+}
