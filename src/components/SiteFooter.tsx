@@ -8,7 +8,7 @@ import { useLang } from '@/i18n/LanguageProvider'
 export default function SiteFooter() {
   const { t } = useLang()
   return (
-    <footer className="bg-forest-deep text-cream/85">
+    <footer className="bg-forest text-cream/85">
       <div className="container-x py-20">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
