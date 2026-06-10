@@ -254,8 +254,8 @@ export default function Home() {
               <h2 className="mt-3 heading-serif text-4xl sm:text-5xl">{t(content.community.title)}</h2>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-              {galleryImages.map((src, i) => (
-                <div key={src} className={`relative overflow-hidden rounded-xl ${i % 5 === 0 ? 'aspect-[3/4]' : 'aspect-square'}`}>
+              {galleryImages.map((src) => (
+                <div key={src} className="relative aspect-square overflow-hidden rounded-xl">
                   <Image src={src} alt="" fill sizes="(max-width: 640px) 50vw, 33vw" className="object-cover transition-transform duration-700 hover:scale-105" />
                 </div>
               ))}

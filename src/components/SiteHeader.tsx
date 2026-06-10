@@ -7,17 +7,21 @@ import { content } from '@/i18n/content'
 import { useLang } from '@/i18n/LanguageProvider'
 import LanguageToggle from './LanguageToggle'
 
-export default function SiteHeader() {
+export default function SiteHeader({ solid = false }: { solid?: boolean }) {
   const { t } = useLang()
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(solid)
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
+    if (solid) {
+      setScrolled(true)
+      return
+    }
     const onScroll = () => setScrolled(window.scrollY > 24)
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [solid])
 
   const links = [
     { href: '/#offerings', label: t(content.nav.offerings) },

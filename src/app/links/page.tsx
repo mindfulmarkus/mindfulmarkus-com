@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { content } from '@/i18n/content'
 import { useLang } from '@/i18n/LanguageProvider'
-import LanguageToggle from '@/components/LanguageToggle'
+import SiteHeader from '@/components/SiteHeader'
 
 // ----------------------------------------------------------------------------
 // Own-brand link hub (replaces Linktree).
@@ -127,17 +127,15 @@ export default function LinksPage() {
   const { t } = useLang()
 
   return (
-    <main className="relative min-h-[100svh] overflow-hidden bg-sand">
+    <>
+      <SiteHeader solid />
+      <main className="relative min-h-[100svh] overflow-hidden bg-sand">
       <div className="pointer-events-none absolute inset-0 opacity-25">
         <Image src="/images/links-bg.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-sand/75 via-sand/90 to-sand" />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-md flex-col items-center px-6 py-10">
-        <div className="mb-4 flex w-full justify-end">
-          <LanguageToggle dark />
-        </div>
-
+      <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-md flex-col items-center px-6 pb-10 pt-28">
         <Image src="/logos/logo-mark-dark.svg" alt="" width={500} height={500} className="h-16 w-16" />
         <h1 className="mt-4 font-serif text-3xl text-forest">mindfulmarkus</h1>
         <p className="mt-2 max-w-xs text-center text-sm leading-relaxed text-ink/70">
@@ -199,5 +197,6 @@ export default function LinksPage() {
         </p>
       </div>
     </main>
+    </>
   )
 }
