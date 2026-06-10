@@ -135,15 +135,9 @@ export default function LinksPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-sand/75 via-sand/90 to-sand" />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-md flex-col items-center px-6 pb-10 pt-28">
-        <Image src="/logos/logo-mark-dark.svg" alt="" width={500} height={500} className="h-16 w-16" />
-        <h1 className="mt-4 font-serif text-3xl text-forest">mindfulmarkus</h1>
-        <p className="mt-2 max-w-xs text-center text-sm leading-relaxed text-ink/70">
-          {t(content.hero.eyebrow)} · {t(content.footer.rights)}
-        </p>
-
+      <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-md flex-col items-center px-6 pb-10 pt-32">
         {/* social icon row */}
-        <div className="mt-5 flex items-center gap-5 text-forest">
+        <div className="flex items-center gap-5 text-forest">
           {socials.map((s) => (
             <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="opacity-80 transition-opacity hover:opacity-100">
               {s.icon}
