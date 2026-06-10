@@ -58,7 +58,7 @@ export default function SiteFooter() {
                   {t(content.footer.instagram)}
                 </a>
               </li>
-              <li><a href="mailto:hello@mindfulmarkus.com" className="hover:text-cream">{t(content.footer.email)}</a></li>
+              <li><a href="mailto:sayhi@mindfulmarkus.com" className="hover:text-cream">{t(content.footer.email)}</a></li>
             </ul>
           </div>
         </div>

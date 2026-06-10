@@ -84,7 +84,7 @@ export default function UeberseeClassPage() {
 
               <p className="mt-6 text-center text-sm text-ink/60">
                 {t(c.questions)}{' '}
-                <a href="mailto:hello@mindfulmarkus.com" className="link-underline">hello@mindfulmarkus.com</a>
+                <a href="mailto:sayhi@mindfulmarkus.com" className="link-underline">sayhi@mindfulmarkus.com</a>
               </p>
             </aside>
           </div>

@@ -43,7 +43,7 @@ const socials = [
   { icon: Icons.instagram, href: 'https://www.instagram.com/mindfulmarkus/', label: 'Instagram' },
   { icon: Icons.youtube, href: 'https://www.youtube.com/@mindfulmarkus', label: 'YouTube' },
   { icon: Icons.spotify, href: 'https://open.spotify.com/user/1155546441', label: 'Spotify' },
-  { icon: Icons.mail, href: 'mailto:hello@mindfulmarkus.com', label: 'Email' },
+  { icon: Icons.mail, href: 'mailto:sayhi@mindfulmarkus.com', label: 'Email' },
 ]
 
 // Big hero card
