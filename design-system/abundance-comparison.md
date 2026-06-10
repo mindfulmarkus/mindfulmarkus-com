@@ -36,21 +36,16 @@ non-Tailwind path), and map `C` to the shared variables.
 cream, same Cormorant family, same calm/warm intent. The gaps are specific and
 small in number.
 
-## Decision 1 — one unified green (changes in BOTH projects)
+## Decision 1 — one unified green ✅ LOCKED: `#125442`
 
-You chose to replace `#125442` *and* `#1E4D3E` with a single new canonical green.
-See `green-options.png` for the three in real brand context:
+**Chosen canonical green = `#125442`** (Abundance's existing emerald), now used
+everywhere. `forest-deep` is set to `#0D3B2E` (a darker shade of it).
 
-| Option | Hex | Character |
-|---|---|---|
-| Website | `#1E4D3E` | Deeper, more olive/earthy |
-| **Blend (recommended)** | `#18503F` | Balanced midpoint — earthy but a touch richer |
-| Abundance | `#125442` | Brighter, cooler/emerald |
+- **Website + kit** — updated: `tailwind.config.ts`, `globals.css`, `tokens.css`,
+  `tailwind-preset.js`. (Done.)
+- **Abundance** — already `#125442`; no change needed. ✅
 
-Once you pick one, it becomes `forest` in the kit, and we update it in the website
-(`tailwind.config.ts` + `globals.css` + `tokens.css` + `tailwind-preset.js`) and in
-Abundance (`C.forest`). `forest-deep` would shift to a darker shade of the chosen
-green for consistency.
+(`green-options.png` shows the three candidates that were compared.)
 
 ## Decision 2 — the rest of the reconciliation (when you're ready to apply)
 

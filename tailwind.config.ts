@@ -11,9 +11,9 @@ const config: Config = {
       colors: {
         // Warm earthy palette
         forest: {
-          DEFAULT: '#1E4D3E',
-          deep: '#14342A',
-          500: '#1E4D3E',
+          DEFAULT: '#125442',
+          deep: '#0D3B2E',
+          500: '#125442',
         },
         sage: {
           DEFAULT: '#909E86',

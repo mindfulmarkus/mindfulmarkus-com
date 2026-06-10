@@ -15,7 +15,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        forest: { DEFAULT: '#1E4D3E', deep: '#14342A', 500: '#1E4D3E' },
+        forest: { DEFAULT: '#125442', deep: '#0D3B2E', 500: '#125442' },
         sage: { DEFAULT: '#909E86', light: '#B7C0A9', dark: '#6F7D63' },
         clay: { DEFAULT: '#B36A5E', light: '#CB897E', dark: '#8F4F45' },
         ochre: { DEFAULT: '#C2843E', light: '#D8A35F', dark: '#9A6526' },

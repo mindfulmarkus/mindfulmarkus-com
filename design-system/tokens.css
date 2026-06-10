@@ -7,8 +7,8 @@
 
 :root {
   /* ---- Brand greens ---- */
-  --mm-forest: #1e4d3e;        /* primary brand green */
-  --mm-forest-deep: #14342a;   /* darker green — deep sections, hovers */
+  --mm-forest: #125442;        /* primary brand green (unified across all projects) */
+  --mm-forest-deep: #0d3b2e;   /* darker green — deep sections, hovers */
 
   /* ---- Sage (muted green) ---- */
   --mm-sage: #909e86;
