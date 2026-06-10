@@ -206,6 +206,47 @@ export const content = {
     followSuffix: t('for daily moments from the practice.', 'für tägliche Momente aus der Praxis.'),
   },
 
+  tools: {
+    eyebrow: t('Beyond the mat', 'Jenseits der Matte'),
+    title: t('Mindful tools for modern life', 'Achtsame Werkzeuge für das moderne Leben'),
+    intro: t(
+      'Small, calm digital tools I build from my own life as a teacher and nomad — yoga for the moments between, not on the mat.',
+      'Kleine, ruhige digitale Werkzeuge, die aus meinem eigenen Leben als Lehrer und Nomade entstehen — Yoga für die Momente dazwischen, nicht auf der Matte.'
+    ),
+    items: {
+      abundance: {
+        badge: t('Live', 'Live'),
+        title: t('Abundance', 'Abundance'),
+        tagline: t('A mindful money tracker for conscious humans.', 'Ein achtsamer Geld-Tracker für bewusste Menschen.'),
+        body: t(
+          'Multi-currency tracking built for nomads — recurring entries, forward projection and a daily abundance mantra. Calm, private, never finance-bro energy.',
+          'Mehrwährungs-Tracking für Nomaden — wiederkehrende Einträge, Vorausschau und ein tägliches Abundance-Mantra. Ruhig, privat, nie Finanz-Bro-Energie.'
+        ),
+        cta: t('Open Abundance', 'Abundance öffnen'),
+      },
+      scroll: {
+        badge: t('In build', 'In Arbeit'),
+        title: t('Mindful Scroll', 'Mindful Scroll'),
+        tagline: t('One question before you open Instagram.', 'Eine Frage, bevor du Instagram öffnest.'),
+        body: t(
+          'A gentle intent prompt — are you here to create, consume, or connect? Awareness without shame or restriction.',
+          'Ein sanfter Impuls — bist du hier, um zu erschaffen, zu konsumieren oder dich zu verbinden? Bewusstheit ohne Scham oder Verbot.'
+        ),
+        cta: t('Coming soon', 'Demnächst'),
+      },
+      more: {
+        badge: t('Planned', 'Geplant'),
+        title: t('More to come', 'Mehr folgt'),
+        tagline: t('Every tool solves a pain I lived first.', 'Jedes Werkzeug löst einen Schmerz, den ich selbst erlebt habe.'),
+        body: t(
+          'The suite grows slowly and intentionally — each one small, beautiful and grounded in real life.',
+          'Die Sammlung wächst langsam und bewusst — jedes klein, schön und im echten Leben verwurzelt.'
+        ),
+        cta: t('On the roadmap', 'Auf der Roadmap'),
+      },
+    },
+  },
+
   newsletter: {
     title: t('Curated for the like-minded', 'Kuratiert für Gleichgesinnte'),
     body: t(

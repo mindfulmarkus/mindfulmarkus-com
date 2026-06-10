@@ -38,6 +38,10 @@ yarn-error.log*
 .env*
 !.env.example
 
+# Original camera photos — NOT used by the app (the site uses public/images).
+# Keep these locally as your source library, but never commit them (they bloat the repo).
+src/images/
+
 # Local preview mockups (not part of the deployed app)
 preview.html
 preview-links.html

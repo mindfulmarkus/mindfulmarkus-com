@@ -38,7 +38,7 @@ export default function SiteFooter() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="https://www.skool.com/mindfulmarkus" target="_blank" rel="noopener noreferrer" className="hover:text-cream">
+                <a href="https://www.skool.com/stillness-in-motion-5445" target="_blank" rel="noopener noreferrer" className="hover:text-cream">
                   {t(content.footer.skool)}
                 </a>
               </li>

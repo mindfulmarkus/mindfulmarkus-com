@@ -9,12 +9,17 @@ import SiteFooter from '@/components/SiteFooter'
 import NewsletterForm from '@/components/NewsletterForm'
 
 const galleryImages = [
-  '/images/gallery/ARV08911.jpg',
-  '/images/gallery/ARV08918.jpg',
-  '/images/gallery/ARV9422.jpg',
-  '/images/gallery/ARV08902.jpg',
-  '/images/gallery/ARV9448.jpg',
-  '/images/gallery/ARV08906.jpg',
+  '/images/gallery-01.jpg',
+  '/images/gallery-02.jpg',
+  '/images/gallery-03.jpg',
+  '/images/gallery-04.jpg',
+  '/images/gallery-05.jpg',
+  '/images/gallery-06.jpg',
+  '/images/gallery-07.jpg',
+  '/images/gallery-08.jpg',
+  '/images/gallery-09.jpg',
+  '/images/gallery-10.jpg',
+  '/images/gallery-11.jpg',
 ]
 
 export default function Home() {
@@ -27,7 +32,7 @@ export default function Home() {
         {/* ============ HERO ============ */}
         <section className="relative flex min-h-[100svh] items-end">
           <Image
-            src="/images/hero-landing01.png"
+            src="/images/hero-home.jpg"
             alt=""
             fill
             priority
@@ -47,7 +52,7 @@ export default function Home() {
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="https://www.skool.com/mindfulmarkus"
+                  href="https://www.skool.com/stillness-in-motion-5445"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-clay"
@@ -80,10 +85,10 @@ export default function Home() {
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { img: '/images/gallery/ARV08911.jpg', data: content.offerings.items.community, href: 'https://www.skool.com/mindfulmarkus', live: true },
-                { img: '/images/gallery/ARV9445.jpg', data: content.offerings.items.liveClasses, href: '/#inperson', live: false },
-                { img: '/images/gallery/ARV9422.jpg', data: content.offerings.items.digital, href: '/#inperson', live: false },
-                { img: '/images/gallery/ARV08902.jpg', data: content.offerings.items.private, href: '/#inperson', live: false },
+                { img: '/images/offering-community.jpg', data: content.offerings.items.community, href: 'https://www.skool.com/stillness-in-motion-5445', live: true },
+                { img: '/images/offering-live-classes.jpg', data: content.offerings.items.liveClasses, href: '/#inperson', live: false },
+                { img: '/images/offering-digital.jpg', data: content.offerings.items.digital, href: '/#inperson', live: false },
+                { img: '/images/offering-private.jpg', data: content.offerings.items.private, href: '/#inperson', live: false },
               ].map((card, i) => (
                 <article
                   key={i}
@@ -126,7 +131,7 @@ export default function Home() {
         <section className="bg-cream py-24 sm:py-32">
           <div className="container-x grid items-center gap-12 md:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl2 shadow-card">
-              <Image src="/images/gallery/ARV08902.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+              <Image src="/images/section-flexibility.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
               <div className="absolute inset-0 flex items-center justify-center bg-bark/25">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-cream/90 text-forest shadow-soft">
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor"><path d="M0 1.7C0 .9.9.4 1.6.8l16.8 9.3c.7.4.7 1.4 0 1.8L1.6 21.2c-.7.4-1.6-.1-1.6-.9V1.7Z" /></svg>
@@ -140,7 +145,7 @@ export default function Home() {
               <span className="eyebrow">{t(content.video.eyebrow)}</span>
               <h2 className="mt-3 heading-serif text-4xl sm:text-5xl">{t(content.video.title)}</h2>
               <p className="mt-6 text-lg leading-relaxed text-ink/75">{t(content.video.body)}</p>
-              <a href="https://www.skool.com/mindfulmarkus" target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">
+              <a href="https://www.skool.com/stillness-in-motion-5445" target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">
                 {t(content.video.cta)}
               </a>
             </div>
@@ -159,10 +164,10 @@ export default function Home() {
               </div>
               <h2 className="mt-3 font-serif text-4xl font-medium text-forest-deep sm:text-5xl">{t(content.inperson.title)}</h2>
               <p className="mt-6 text-lg leading-relaxed text-forest-deep/85">{t(content.inperson.body)}</p>
-              <a href="https://www.skool.com/mindfulmarkus" target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">{t(content.inperson.cta)}</a>
+              <a href="https://www.skool.com/stillness-in-motion-5445" target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">{t(content.inperson.cta)}</a>
             </div>
             <div className="relative order-first aspect-square overflow-hidden rounded-xl2 shadow-soft md:order-last">
-              <Image src="/images/gallery/ARV9445.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+              <Image src="/images/section-inperson.jpg" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
         </section>
@@ -207,7 +212,7 @@ export default function Home() {
         <section id="about" className="bg-cream py-24 sm:py-32">
           <div className="container-x grid items-center gap-12 md:grid-cols-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-xl2 shadow-card">
-              <Image src="/images/gallery/ARV9433.jpg" alt="Markus" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+              <Image src="/images/about-markus.jpg" alt="Markus" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
             <div>
               <span className="eyebrow">{t(content.about.eyebrow)}</span>
@@ -260,6 +265,54 @@ export default function Home() {
               <a href="https://instagram.com/mindfulmarkus" target="_blank" rel="noopener noreferrer" className="link-underline">@mindfulmarkus</a>{' '}
               {t(content.community.followSuffix)}
             </p>
+          </div>
+        </section>
+
+        {/* ============ TOOLS ============ */}
+        <section id="tools" className="bg-forest-deep py-24 text-cream sm:py-32">
+          <div className="container-x">
+            <div className="mx-auto mb-14 max-w-2xl text-center">
+              <span className="eyebrow text-sage-light">{t(content.tools.eyebrow)}</span>
+              <h2 className="mt-3 font-serif text-4xl font-medium text-cream sm:text-5xl">{t(content.tools.title)}</h2>
+              <p className="mt-5 text-cream/75">{t(content.tools.intro)}</p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              {[
+                { data: content.tools.items.abundance, href: 'https://abundance.mindfulmarkus.com', live: true },
+                { data: content.tools.items.scroll, href: null, live: false },
+                { data: content.tools.items.more, href: null, live: false },
+              ].map((tool, i) => (
+                <article
+                  key={i}
+                  className="flex flex-col rounded-xl2 bg-cream/5 p-7 ring-1 ring-cream/10 backdrop-blur"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="font-serif text-2xl text-cream">{t(tool.data.title)}</h3>
+                    <span
+                      className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium tracking-wide ${
+                        tool.live ? 'bg-sage-light/20 text-sage-light' : 'bg-cream/10 text-cream/60'
+                      }`}
+                    >
+                      {t(tool.data.badge)}
+                    </span>
+                  </div>
+                  <p className="mt-2 font-serif text-sm italic text-sage-light">{t(tool.data.tagline)}</p>
+                  <p className="mt-4 flex-1 text-sm leading-relaxed text-cream/75">{t(tool.data.body)}</p>
+                  {tool.live && tool.href ? (
+                    <a
+                      href={tool.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 self-start rounded-full bg-cream px-5 py-2.5 text-sm font-medium text-forest-deep transition-colors hover:bg-sand-light"
+                    >
+                      {t(tool.data.cta)} →
+                    </a>
+                  ) : (
+                    <span className="mt-6 self-start text-sm font-medium text-cream/50">{t(tool.data.cta)}</span>
+                  )}
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

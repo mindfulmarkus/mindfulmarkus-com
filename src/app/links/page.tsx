@@ -42,7 +42,7 @@ const Icons = {
 const socials = [
   { icon: Icons.instagram, href: 'https://www.instagram.com/mindfulmarkus/', label: 'Instagram' },
   { icon: Icons.youtube, href: 'https://www.youtube.com/@mindfulmarkus', label: 'YouTube' },
-  { icon: Icons.spotify, href: 'https://open.spotify.com/user/mindfulmarkus', label: 'Spotify' },
+  { icon: Icons.spotify, href: 'https://open.spotify.com/user/1155546441', label: 'Spotify' },
   { icon: Icons.mail, href: 'mailto:hello@mindfulmarkus.com', label: 'Email' },
 ]
 
@@ -50,8 +50,8 @@ const socials = [
 const featured = {
   label: tt('stillness in motion', 'stillness in motion'),
   sub: tt('My grounding online yoga space', 'Mein erdender Online-Yoga-Raum'),
-  href: 'https://www.skool.com/mindfulmarkus',
-  image: '/images/gallery/ARV08906.jpg', // TODO: swap for the "stillness in motion" cover
+  href: 'https://www.skool.com/stillness-in-motion-5445',
+  image: '/images/links-featured.jpg',
 }
 
 // Stacked links (image is optional → renders a thumbnail row)
@@ -71,20 +71,36 @@ const links: {
     kind: 'soft',
   },
   {
-    label: tt('Spotify playlist: Slow Somatic Morning', 'Spotify-Playlist: Slow Somatic Morning'),
-    sub: tt('A slow, embodied morning journey', 'Eine langsame, verkörperte Morgenreise'),
-    href: 'https://open.spotify.com/playlist/REPLACE_ME',
+    label: tt('Slow Somatic Morning', 'Slow Somatic Morning'),
+    sub: tt('Spotify playlist', 'Spotify-Playlist'),
+    href: 'https://open.spotify.com/playlist/3187IL3tKCuQzuymqJ52zb',
     external: true,
     kind: 'ghost',
-    image: '/images/gallery/ARV9448.jpg', // TODO: swap for the playlist cover
+    image: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84152fb4e4d8161f4ded6fa97a',
   },
   {
-    label: tt('Podcast: Mit dem Fahrrad durch Südostasien', 'Podcast: Mit dem Fahrrad durch Südostasien'),
-    sub: tt('Alex & Vivian · guest episode', 'Alex & Vivian · Gastfolge'),
-    href: 'https://open.spotify.com/episode/REPLACE_ME',
+    label: tt('Somatic Yang', 'Somatic Yang'),
+    sub: tt('Spotify playlist', 'Spotify-Playlist'),
+    href: 'https://open.spotify.com/playlist/2CrupcYg39OZfHgOqBHGK1',
     external: true,
     kind: 'ghost',
-    image: '/images/gallery/ARV08902.jpg', // TODO: swap for the podcast cover
+    image: 'https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da841387ffe90aa9cf0c62ac1e22',
+  },
+  {
+    label: tt('Embodied Vinyasa', 'Embodied Vinyasa'),
+    sub: tt('Spotify playlist', 'Spotify-Playlist'),
+    href: 'https://open.spotify.com/playlist/4LbCZFiKHJH1wvzBPdqiz1',
+    external: true,
+    kind: 'ghost',
+    image: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84221fe97148409d3a3c9e0836',
+  },
+  {
+    label: tt('Arrive', 'Arrive'),
+    sub: tt('Spotify playlist', 'Spotify-Playlist'),
+    href: 'https://open.spotify.com/playlist/2z7AyBelr05wWVCAGO670H',
+    external: true,
+    kind: 'ghost',
+    image: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e01412864d09b232ad6da431',
   },
   {
     label: tt('Free meditation', 'Kostenlose Meditation'),
@@ -113,7 +129,7 @@ export default function LinksPage() {
   return (
     <main className="relative min-h-[100svh] overflow-hidden bg-sand">
       <div className="pointer-events-none absolute inset-0 opacity-25">
-        <Image src="/images/gallery/ARV9448.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
+        <Image src="/images/links-bg.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-sand/75 via-sand/90 to-sand" />
       </div>
 

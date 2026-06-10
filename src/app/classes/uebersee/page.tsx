@@ -28,7 +28,7 @@ export default function UeberseeClassPage() {
       <main>
         {/* Hero */}
         <section className="relative flex min-h-[70svh] items-end">
-          <Image src="/images/gallery/ARV9448.jpg" alt="" fill priority sizes="100vw" className="object-cover object-center" />
+          <Image src="/images/class-uebersee-hero.jpg" alt="" fill priority sizes="100vw" className="object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-bark/85 via-bark/35 to-bark/45" />
           <div className="container-x relative z-10 pb-16 pt-32">
             <Link href="/" className="text-sm text-cream/80 hover:text-cream">← {t(c.back)}</Link>

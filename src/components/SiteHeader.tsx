@@ -65,7 +65,7 @@ export default function SiteHeader() {
           ))}
           <LanguageToggle dark={scrolled} />
           <a
-            href="https://www.skool.com/mindfulmarkus"
+            href="https://www.skool.com/stillness-in-motion-5445"
             target="_blank"
             rel="noopener noreferrer"
             className={`rounded-full px-5 py-2.5 text-sm font-medium transition-all ${
@@ -108,7 +108,7 @@ export default function SiteHeader() {
               </Link>
             ))}
             <a
-              href="https://www.skool.com/mindfulmarkus"
+              href="https://www.skool.com/stillness-in-motion-5445"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 rounded-full bg-forest px-5 py-3 text-center text-cream"
